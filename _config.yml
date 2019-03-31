@@ -1,18 +1,18 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
+title: Richard
+description: 'Richard - a robotics engineer'
 url: 'https://chekaiwei.github.io/'
 baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Richard'
+  email: richardfeynman180778@gmail.com
+  twitter_username: Richard
+  facebook_username: Richard
+  github_username:  Richard
+  linkedin_username:  Richard
 
 defaults:
   -
@@ -25,7 +25,7 @@ defaults:
 # Build settings
 destination: _site
 paginate: 10
-permalink: /:year/:title/
+permalink: /:2019/:homepage/
 markdown: kramdown
 highlighter: rouge
 
