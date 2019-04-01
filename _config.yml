@@ -1,43 +1,25 @@
-# Site settings
-title: Richard
-description: 'Richard - a robotics engineer'
-url: 'https://chekaiwei.github.io/'
-baseurl: ''
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
 
+# Setup
+title:               Lanyon
+tagline:             'A Jekyll theme'
+description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:                 http://lanyon.getpoole.com
+baseurl:             ''
+paginate:            5
+
+# About/contact
 author:
-  name: 'Richard'
-  email: richardfeynman180778@gmail.com
-  twitter_username: Richard
-  facebook_username: Richard
-  github_username:  Richard
-  linkedin_username:  Richard
+  name:              Mark Otto
+  url:               https://twitter.com/mdo
+  email:             markdotto@gmail.com
 
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
+# Custom vars
+version:             1.0.0
 
-# Build settings
-destination: _site
-paginate: 10
-permalink: /:2019/:homepage/
-markdown: kramdown
-highlighter: rouge
-
-sass:
-    sass_dir: _sass
-    style: compressed
-
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
-
-plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"
