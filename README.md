@@ -1,4 +1,7 @@
 # Lanyon
+![Logo](pic01.jpg)
+
+<img src="pic01.jpg" style="height:11%;width:50%; margin-left:30%">
 
 Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
