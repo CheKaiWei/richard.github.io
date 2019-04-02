@@ -322,11 +322,13 @@ a.sidebar-nav-item:focus {
 }
 
 /* Blog post or page title */
+.homepage-title,
 .page-title,
 .post-title,
 .post-title a {
   color: #303030;
 }
+.homepage-title,
 .page-title,
 .post-title {
   margin-top: 0;

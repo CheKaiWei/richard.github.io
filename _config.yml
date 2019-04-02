@@ -8,7 +8,8 @@ title:               Richard
 tagline:             'HomePage'
 description:         Richard
 url:                 http://chekaiwei.github.io
-baseurl:             'https://chekaiwei.github.io/'
+#baseurl:             'https://chekaiwei.github.io/'
+baseurl:             ' '
 paginate:            5
 
 
