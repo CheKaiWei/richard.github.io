@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Home
+layout: page
+title: Blog
 ---
 
 <div class="posts">
@@ -8,7 +8,7 @@ title: Home
   <div class="post">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}/{{ post.url }}">
-        hello
+        {{ post.title }}
       </a>
     </h1>
 
@@ -35,4 +35,3 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
-

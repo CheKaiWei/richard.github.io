@@ -35,6 +35,15 @@
  */
 
 /* Prevent scroll on narrow devices */
+img[alt$="image1"] {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin: auto;
+  float: none!important;
+}
+
+
 html,
 body {
   overflow-x: hidden;
