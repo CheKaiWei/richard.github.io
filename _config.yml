@@ -8,7 +8,7 @@ title:               Richard
 tagline:             'HomePage'
 description:         Richard
 url:                 http://chekaiwei.github.io
-baseurl:             'https://chekaiwei.github.io/'
+baseurl:             ''
 #baseurl:             'http://127.0.0.1:4000/'
 paginate:            5
 
