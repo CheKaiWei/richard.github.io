@@ -43,6 +43,13 @@ img[alt$="image1"] {
   float: none!important;
 }
 
+img[alt$="image2"] {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: auto;
+  float: none!important;
+}
 
 html,
 body {
@@ -111,6 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 50px;
   color: #505050;
 }
 .masthead-title a {
@@ -319,6 +327,7 @@ a.sidebar-nav-item:focus {
 .page,
 .post {
   margin-bottom: 4em;
+  background-color:ghostwhite;
 }
 
 /* Blog post or page title */
