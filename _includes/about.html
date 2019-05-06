@@ -3,8 +3,10 @@
     <div class="col-md-8">
             
         <h2>Summary</h2>
-        {{ about.content }}
 
+        {% for post in site.posts %}
+            {{ about.content }}
+        {% endfor %}
         <h2>Contact</h2>
 
         <ul>

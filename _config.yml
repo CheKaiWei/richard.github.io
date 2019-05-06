@@ -21,7 +21,7 @@ repository: github_username/github_username.github.io # ex. DONGChuan/DONGChuan.
 # The base hostname & protocol for your site
 # For local test, please use http://localhost:4000
 # For production, use your github page url. ex. http://dongchuan.github.io
-url: ttp://chekaiwei.github.io
+url: http://chekaiwei.github.io
 
 ## Gem
 gems:
