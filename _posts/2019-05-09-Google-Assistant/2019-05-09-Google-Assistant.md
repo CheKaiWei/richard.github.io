@@ -5,6 +5,7 @@ category: Google
 tags: [Education, Opioions]
 ---
 
+<p align="right">Author：Richard</p>
 
 ## Run Voice Activated Google Assistant on Windows PC
 
@@ -34,7 +35,7 @@ Step 3: Testing Google Assistant
 
 4. Check Python is installed or not in your system. Open Command Prompt as admin and type the following command and hit the enter button.
 
-![python](Google/1-python.png)
+![python](1-python.png)
 
 also look: [Python 3 Installation & Setup Guide](https://realpython.com/installing-python/#step-1-download-the-python-3-installer)
 
@@ -43,11 +44,11 @@ First, visit the Google Cloud Platform Console on your Windows computer.
 
 Next, click on the Create Project button.
 
-![project](Google/2-project.png)
+![project](Google\2-project.png)
 
 In your project page click on __APIs & Services__ then select __Library__. Here search for Google Assistant in the search console. Select Google Assistant API and click on __Enable__ button. At right-hand side __select Credentials__ and click on Create Credential button.
 
-![credentials](Google/3-credentials.png)
+![credentials](/Google/3-credentials.png)
 
 After all of this, download JSON file to your system and save it somewhere you can easily access it.
 
