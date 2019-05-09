@@ -6,9 +6,9 @@ tags: [Education, Opioions]
 ---
 
 
-# How To Run Voice Activated Google Assistant on Windows PC
+## Run Voice Activated Google Assistant on Windows PC
 
-## Prerequisites:
+### Prerequisites
 
 Before going to install Google Assistant on windows pc, you should know a few necessary things and set up a few others.
 
@@ -27,7 +27,7 @@ Step 2: Install Google Assistant on Windows PC
 Step 3: Testing Google Assistant
 
 
-## Install Python 3 On Windows
+### Install Python 3 On Windows
 1. Open a browser window and navigate to the [Download page for Windows](https://www.python.org/downloads/windows/) at python.org.
 2. Underneath the heading at the top that says Python Releases for Windows, click on the link for the Latest Python 3 Release - Python 3.x.x. (As of this writing, the latest is Python 3.6.5.)
 3. Scroll to the bottom and select either Windows x86-64 executable installer for 64-bit or Windows x86 executable installer for 32-bit. (See below.)
@@ -38,7 +38,7 @@ Step 3: Testing Google Assistant
 
 also look: [Python 3 Installation & Setup Guide](https://realpython.com/installing-python/#step-1-download-the-python-3-installer)
 
-## Configure Google Assistant API
+### Configure Google Assistant API
 First, visit the Google Cloud Platform Console on your Windows computer.
 
 Next, click on the Create Project button.
@@ -53,7 +53,7 @@ After all of this, download JSON file to your system and save it somewhere you c
 
 ![download](Google/4-download.png)
 
-## Install Google Assistant on Windows PC
+### Install Google Assistant on Windows PC
 Open Command Prompt as admin and type the following command and hit enter after each one.
 
 ```bash
@@ -86,7 +86,7 @@ Enter the authorization code:
 Once you run above command you will get URL as result just copy it and past it on your browser.
 Select you Google account and you will get authentication code.
 
-## Testing Google Assistant
+### Testing Google Assistant
 
 Turn ON your system Speakers
 
@@ -112,8 +112,8 @@ INFO:root:Playing back samples.
 INFO:root:Finished playback.
 INFO:root:audio test completed.
 ```
-# Problems & Next Step:
-## Problems
+## Problems & Next Step:
+### Problems
 1. Nothing happen in my surface after I entering the authorization code:
 ```bash
 Enter the authorization code:
@@ -137,12 +137,12 @@ nError('<urllib3.connection.VerifiedHTTPSConnection object at 0x000000000535E9B0
 ERROR:root:Run google-oauthlib-tool to initialize new OAuth 2.0 credentials.
 ```
 
-## Next Steps
+### Next Steps
 1. Run on Surface
 2. Record my voice
 3. Interactive with Google Assistant
 
-# Source
+## Source
 [Google Assistant SDK](https://developers.google.com/assistant/sdk/guides/service/python/embed/run-sample)
 
 [How to Install Google Assistant on Windows 10](https://troubleshooter.xyz/wiki/how-to-install-google-assistant-on-windows-10/)
