@@ -121,10 +121,12 @@ INFO:root:audio test completed.
 ## Problems & Next Step:
 ### Problems
 1. Nothing happen in my surface after I entering the authorization code:
+
 ```bash
 Enter the authorization code:
 ```
 2. Can't go forward to add more function case this error:
+
 ```bash
 F:\Google>googlesamples-assistant-devicetool register-model --manufacturer “Ass
 istant SDK developer” --product-name “Assistant SDK light” --type LIGHT --mod
@@ -141,6 +143,7 @@ nError('<urllib3.connection.VerifiedHTTPSConnection object at 0x000000000535E9B0
 >: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后
 没有正确答复或连接的主机没有反应，连接尝试失败。'))
 ERROR:root:Run google-oauthlib-tool to initialize new OAuth 2.0 credentials.
+
 ```
 
 ### Next Steps
