@@ -1,12 +1,19 @@
 ---
 layout: post
-title: How To Run Voice Activated Google Assistant on Windows PC
+title: Google Assistant on Windows PC
 category: Google
 tags: [Education, Opioions]
 ---
+This blog talk about how to run voice activated Google Assistant on Windows PC
 
-<p align="right">Author：Richard</p>
+<p align="right">
+Author：Richard 
+</p>
 
+<p align="right">Github:
+<a href="https://github.com/CheKaiWei/Google-Assisntant">Github: Google Assistant</a>
+</p>
+</p>
 ## Run Voice Activated Google Assistant on Windows PC
 
 ### Prerequisites

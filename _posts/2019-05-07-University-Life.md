@@ -4,6 +4,11 @@ title: University Life
 category: Life
 tags: [life]
 ---
+My university life
+
+<p align="right">
+Author：Richard
+</p>
 
 ## __Debate__
 I participated in three different debate team during my school time, "Debate team of Automation School", "Debate Team of Shenzhen University" and "English Speaking and Debate Society".
