@@ -10,10 +10,11 @@ This blog talk about how to run voice activated Google Assistant on Windows PC
 Author：Richard 
 </p>
 
-<p align="right">Github:
+<p align="right">
+Github:
 <a href="https://github.com/CheKaiWei/Google-Assisntant">Github: Google Assistant</a>
 </p>
-</p>
+
 ## Run Voice Activated Google Assistant on Windows PC
 
 ### Prerequisites
