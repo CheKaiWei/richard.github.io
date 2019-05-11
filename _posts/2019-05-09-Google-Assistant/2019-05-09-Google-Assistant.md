@@ -35,11 +35,10 @@ Step 3: Testing Google Assistant
 
 4. Check Python is installed or not in your system. Open Command Prompt as admin and type the following command and hit the enter button.
 
-![python]({{"image\1-python.png" | absolute_url}})
 
 ![python]({{"image/1-python.png" | absolute_url}})
 
-![python]({{"_posts/2019-05-09-Google-Assistant/Google/1-python.png" | absolute_url}})
+
 
 also look: [Python 3 Installation & Setup Guide](https://realpython.com/installing-python/#step-1-download-the-python-3-installer)
 
