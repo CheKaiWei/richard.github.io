@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: c Learning
+title: Robotics Learning
 category: Google
 tags: [Education, Opioions]
 ---
@@ -12,7 +12,7 @@ Author：Richard
 
 <p align="right">
 Github:
-<a href="https://github.com/CheKaiWei/Google-Assisntant">Github: Google Assistant</a>
+<a href="https://github.com/CheKaiWei/Google-Assisntant"> Google Assistant</a>
 </p>
 
 
