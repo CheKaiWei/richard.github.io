@@ -55,15 +55,15 @@ First, visit the Google Cloud Platform Console on your Windows computer.
 
 Next, click on the Create Project button.
 
-![project](image/Google Assistant/2-project.png)
+![project]({{"image/Google Assistant/2-project.png" | absolute_url}})
 
 In your project page click on __APIs & Services__ then select __Library__. Here search for Google Assistant in the search console. Select Google Assistant API and click on __Enable__ button. At right-hand side __select Credentials__ and click on Create Credential button.
 
-![credentials](image/Google Assistant/3-credentials.png)
+![credentials]({{"image/Google Assistant/3-credentials.png" | absolute_url}})
 
 After all of this, download JSON file to your system and save it somewhere you can easily access it.
 
-![download](image/Google Assistant/4-download.png)
+![download]({{"image/Google Assistant/4-download.png" | absolute_url}})
 
 ### Install Google Assistant on Windows PC
 Open Command Prompt as admin and type the following command and hit enter after each one.
