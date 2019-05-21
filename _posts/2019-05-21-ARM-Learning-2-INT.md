@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: ARM Learning 1 INT
+title: ARM Learning 2 INT
 category: ARM
 tags: [Education, Opioions]
 ---
@@ -20,7 +20,7 @@ Github:
 <details>
 <summary>head.s</summary>
 
-```C    
+<pre>    
 .extern     main
 .text 
 .global _start 
@@ -95,18 +95,17 @@ HandleIRQ:
     ldr pc, =EINT_Handle            @ 调用中断服务函数，在interrupt.c中
 int_return:
     ldmia   sp!,    { r0-r12,pc }^  @ 中断返回, ^表示将spsr的值复制到cpsr
-    
-```
+</pre> 
 
 </details>
 
 功能：初始化，设置中断模式、管理模式的栈，设置好中断处理函数。
 
 其中：
-```C
+<pre>
     bl  init_led
     bl  init_irq 
-```
+</pre>
 为执行此两个函数。
 
 ---
@@ -115,7 +114,7 @@ int_return:
 <details>
 <summary>s3c24xx.h</summary>
 
-```C
+<pre>
 /* WOTCH DOG register */
 #define     WTCON           (*(volatile unsigned long *)0x53000000)
 
@@ -172,11 +171,12 @@ int_return:
 /*external interrupt registers*/
 #define EINTMASK            (*(volatile unsigned long *)0x560000a4)
 #define EINTPEND            (*(volatile unsigned long *)0x560000a8)
-```
+</pre>
+
 </details>
 
 这里使用到的interrupt registes，我们可以看到：
-```C
+<pre>
 #define SRCPND              (*(volatile unsigned long *)0x4A000000)
 #define INTMOD              (*(volatile unsigned long *)0x4A000004)
 #define INTMSK              (*(volatile unsigned long *)0x4A000008)
@@ -185,7 +185,7 @@ int_return:
 #define INTOFFSET           (*(volatile unsigned long *)0x4A000014)
 #define SUBSRCPND           (*(volatile unsigned long *)0x4A000018)
 #define INTSUBMSK           (*(volatile unsigned long *)0x4A00001c)
-```
+</pre>
 S3C2440A 中的中断控制器接受来自 60 个中断源的请求。提供这些中断源的是内部外设，如 DMA 控制器、UART、IIC 等等。在这些中断源中，UARTn、AC97 和 EINTn 中断对于中断控制器而言是“或”关系。当从内部外设和外部中断请求引脚收到多个中断请求时，中断控制器在仲裁步骤后请求 ARM920T 内核的 FIQ或 IRQ。仲裁步骤由硬件优先级逻辑决定并且写入结果到帮助用户通告是各种中断源中的哪个中断发生了的中断挂起寄存器中。
 
 控制流程图如下：
@@ -208,7 +208,7 @@ S3C2440A 中的中断控制器接受来自 60 个中断源的请求。提供这�
 <details>
 <summary>init.c</summary>
 
-```C
+<pre>
 /*
  * init.c: 进行一些初始化
  */ 
@@ -280,7 +280,7 @@ void init_irq( )
     // EINT0、EINT2、EINT8_23使能
     INTMSK   &= (~(1<<0)) & (~(1<<2)) & (~(1<<5));
 }
-```
+</pre>
 </details>
 进行一些初始化，对优先级等寄存器进行赋值
 
@@ -291,7 +291,7 @@ void init_irq( )
 <summary>interrupt.c</summary>
 
 interrupt.c
-```C
+<pre>
 #include "s3c24xx.h"
 
 void EINT_Handle()
@@ -338,50 +338,60 @@ void EINT_Handle()
 }
 
 // 中断过程：
-//
-```
+
+</pre>
 </details>
 
 这里用到INTOFFSET寄存器：
-```C
+<pre>
     unsigned long oft = INTOFFSET;
-```
+</pre>
 可以看到，通过读取此寄存器，获得最优先级的中断请求。
 
 ![INT]({{"image/ARM Learning 1 LED and Keys/4-INT03.png" | absolute_url}})
 
 同时，这里使用清理中断的方法如下：
-```C
+
+<pre>
     //清中断
     if( oft == 5 ) 
-        EINTPEND = (1<<11);   // EINT8_23合用IRQ5
-    SRCPND = 1<<oft;
-    INTPND = 1<<oft;
+        EINTPEND = (1&lt;&lt;11);   // EINT8_23合用IRQ5
+    SRCPND = 1&lt;&lt;oft;
+    INTPND = 1&lt;&lt;oft;
 	//SRCPND = SRCPND;
-```
+</pre
+>
 可以看到，**是将此位置为1，即可清除此位的数值**！
 
 有两种方法，如果是单次清理，使用
-```C
+<pre>
     SRCPND = SRCPND;
-```
+</pre>
 如果是循环清理，就是未完成的中断还需要继续完成的话，则需要使用：
-```C
-    SRCPND = 1<<oft;
-    INTPND = 1<<oft;
-```
+
+<pre>
+    SRCPND = 1&lt;&lt;oft;
+    INTPND = 1&lt;&lt;oft;
+</pre>
+
 ---
+
 ## main.c
 <details>
 <summary>main.c</summary>
 main.c
-```C
+<pre>
 int main()
 {
     while(1);
     return 0;
 }
-```
+</pre>
 </details>
 此处使用main循环，等待中断
 
+<!--
+<textarea style="width:100%;height:100px">
+
+</textarea>
+-->
