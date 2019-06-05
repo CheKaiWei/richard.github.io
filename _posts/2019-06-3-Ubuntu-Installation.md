@@ -41,6 +41,7 @@ sudo apt --fix-broken install
 ```
 [ubuntu18.04 安装后快速初始化常用环境指南](https://blog.szfszf.top/tech/ubuntu18-04-%E5%AE%89%E8%A3%85%E5%90%8E%E5%BF%AB%E9%80%9F%E5%88%9D%E5%A7%8B%E5%8C%96%E5%B8%B8%E7%94%A8%E7%8E%AF%E5%A2%83%E6%8C%87%E5%8D%97/)  
 [Ubuntu18.04安装之后的配置+优化](https://blog.csdn.net/ywk_hax/article/details/83790207)
+
 ### 问题
 Q：ubuntu 解决“无法获得锁 /var/lib/dpkg/lock -open （11：资源暂时不可用）”的方法  
 A：
